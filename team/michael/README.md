@@ -26,8 +26,10 @@ A local pull request will test if changes made directly to the GitHub repos are 
 
 Tascoast
 
----- Date: --
 
+13/08/2025 
+Sorting out how to get a fork's directory locally and the Git mechanics running smoothly and document fork to template refinement branch
 
+---- Outcome -----
 
  
