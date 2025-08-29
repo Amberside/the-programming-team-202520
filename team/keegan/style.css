@@ -32,8 +32,7 @@ h1 {
 
 @keyframes oscilate {
   0% {margin-left: 280px;}
-  25% {margin-left: 270px;}
-  50% {margin-left: 280px;}
+  25% {margin-left: 275px;}
   75% {margin-left: 290px;}
   100% {margin-left: 280px;}
 }
