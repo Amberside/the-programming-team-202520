@@ -1,0 +1,88 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d3d9d6;
+}
+/*This part is currently setting the heading colours */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 3em;
+  color: blue;
+}
+
+.flex {
+  display: flex;
+}
+/*Paragraph text and style properties*/
+p {
+  color: black;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/*Heading types and styles - main H1 heading color added*/
+h1 {
+  text-align: center;
+  color: black
+}
+/*Heading types and styles - main H1 heading color added*/
+h2 {
+  text-align: left;
+  color: green;
+}
+/*list styling*/
+li {
+  /*list items and bullet typeface colour*/
+  color: black;
+  
+}
+/*Active link colours and styles?*/
+a {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: blueviolet;
+  color: white;
+  text-decoration: none;
+}
+/* Hover effects..text background of onject/container for text links*/
+a:hover {
+  background-color: blue;
+}
+/*Spinner styling*/
+.spinner {
+  margin: 3rem auto;
+  width: 150px;
+  height: 150px;
+  border: 32px solid pink;
+  border-top: 32px solid red;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+/* Continue here to develop an imagestrip styling suited to small images above footer elements*/
+.imagestrip {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: blue;
+  background-color: rgb(241, 238, 244);
+  height: 50px;
+}
+
+/* @keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+
+}
+  */
+.imagestrip {
+  background-color: rgb(21, 156, 14);
+}
+
+.col {
+  width: 50%;
+}
+/*bottom/footer styles*/
+.bottom {
+  margin: 1rem auto;
+  text-align: center;
+  background-color: rgb(21, 156, 14);
+}
