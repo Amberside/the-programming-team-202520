@@ -1,0 +1,116 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(138, 97, 185);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 3em;
+  color: rgb(251, 120, 255);
+}
+
+.flex {
+  display: flex;
+}
+
+p {
+  color: black;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.descrip {
+  text-align: left;
+}
+
+h1 {
+  margin: 0;
+  animation: oscilate 2s linear infinite;
+}
+
+@keyframes oscilate {
+  0% {margin-left: 280px;}
+  25% {margin-left: 270px;}
+  50% {margin-left: 280px;}
+  75% {margin-left: 290px;}
+  100% {margin-left: 280px;}
+}
+
+li {
+  color: black;
+}
+a {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: blueviolet;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: blue;
+}
+
+h3 a {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: rgb(252, 157, 255);
+  text-decoration: underline dashed;
+
+  &:hover{
+    background: none;
+    color: rgb(252, 179, 255);
+    text-decoration: underline dotted;
+  }
+}
+
+.game-window{
+  border: 2px solid red;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 170px;
+}
+
+#row {
+  display: flex;
+}
+
+button {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-style: none;
+
+  &:hover {
+    background-color: #c7c7c7;
+  }
+}
+
+#start {
+  width: auto;
+  height: auto;
+  border-style: solid;
+  margin: 10px auto;
+}
+
+#b1, #b4{
+  background-color: #e6e6e6;
+
+  &:hover {
+    background-color: #c7c7c7;
+  }
+}
+
+.col {
+  width: 50%;
+}
+
+.bottom {
+  margin: 1rem auto;
+  text-align: center;
+}
