@@ -45,3 +45,13 @@ a {
 body {
     background: rgb(52, 54, 57);
 }
+
+.btn {
+    display: block;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

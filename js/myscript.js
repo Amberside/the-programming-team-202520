@@ -47,6 +47,7 @@ let imageList = [
 // path: The directory created in the team folder
 // lastName: Students last name
 // firstName: Students first name
+
 let students = [
   {
     path: "amberle",
@@ -57,6 +58,11 @@ let students = [
     path: "jed",
     lastName: "McKenna",
     firstName: "Jed",
+  },
+  {
+    "path": "ethan",
+    "lastName": "Lew",
+    "firstName": "Ethan"
   },
   {
     path: "michael-deak",
