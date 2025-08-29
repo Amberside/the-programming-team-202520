@@ -1,14 +1,14 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(138, 97, 185);
+  background-color: #8a61b9;
 }
 
 .container {
   max-width: 800px;
   margin: auto;
   padding-top: 3em;
-  color: rgb(251, 120, 255);
+  color: #FDBFFF;
 }
 
 .flex {
@@ -44,13 +44,13 @@ a {
   display: block;
   margin: 1rem;
   padding: 1rem;
-  background-color: rgb(130, 28, 226);
+  background-color: #821ce2;
   color: white;
   text-decoration: none;
 }
 
 a:hover {
-  background-color: rgb(104, 0, 201);
+  background-color: #6800c9;
 }
 
 h3 a {
@@ -58,17 +58,17 @@ h3 a {
   margin: 0;
   padding: 0;
   background: none;
-  color: rgb(252, 157, 255);
+  color: #fc99ff;
 
   &:hover{
     background: none;
-    color: rgb(253, 196, 255);
+    color: #fcaaff;
     text-decoration: underline dotted;
   }
 }
 
 .game-window{
-  border: 2px solid red;
+  border: 2px solid #821ce2;
   width: 400px;
   height: 400px;
   margin-bottom: 170px;
