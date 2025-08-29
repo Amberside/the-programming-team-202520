@@ -1,12 +1,9 @@
-let students =
-[
-
-	{
-		"path": "ethan",
-		"lastName": "Lew",
-		"firstName": "Ethan"
-	},
-	
+let students = [
+  {
+    "path": "ethan",
+    "lastName": "Lew",
+    "firstName": "Ethan"
+  }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
