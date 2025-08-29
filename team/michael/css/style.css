@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: bisque;
+  background-color: #d3d9d6;
 }
 
 .container {
@@ -67,7 +67,7 @@ a:hover {
   */
 .imagestrip {
   
-  background-color: rgb(156, 14, 14);
+  background-color: rgb(21, 156, 14);
 }
 
 .col {
@@ -77,4 +77,5 @@ a:hover {
 .bottom {
   margin: 1rem auto;
   text-align: center;
+
 }
