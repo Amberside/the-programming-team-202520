@@ -1,0 +1,54 @@
+.multi-select-list {
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 2px solid red;
+
+}
+
+.list-item {
+    color: #000000;
+    padding: 8px 16px;
+    border-bottom: 1px solid red;
+    cursor: pointer;
+
+}
+
+.list-item:last-child {
+    border-bottom: none;
+
+}
+
+.list-item.selected {
+    background-color: #04AA6B;
+    color: white;
+
+}
+
+.list-item:hover:not(.selected) {
+    background-color: #555555;
+    color: white;
+
+}
+
+.btn {
+    font-size: 1.5rem;
+    background-color: #04AA6B;
+    color: white;
+    padding: 6px;
+    border-radius: 35px;
+    border: none;
+}
+
+.button-list {
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+button:hover {
+    font-size: 100px;
+    transition: transform 2s;
+
+}
