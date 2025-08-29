@@ -45,6 +45,8 @@ a {
   margin: 1rem;
   padding: 1rem;
   background-color: #821ce2;
+  border: solid 2px #FDBFFF;
+  border-radius: 10px;
   color: white;
   text-decoration: none;
 }
@@ -59,6 +61,7 @@ h3 a {
   padding: 0;
   background: none;
   color: #fb92ff;
+  border: none;
 
   &:hover{
     background: none;
@@ -68,7 +71,7 @@ h3 a {
 }
 
 .game-window{
-  border: 2px solid #821ce2;
+  border: 2px solid #000000;
   width: 400px;
   height: 400px;
   margin-bottom: 170px;
