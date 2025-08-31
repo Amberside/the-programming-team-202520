@@ -164,6 +164,7 @@
     border-radius: 10px;
     margin: 40px auto;
     background-color: #fff8f0;
+    margin-bottom: 50px;
 
 }
 .about-section h2 {
@@ -175,6 +176,7 @@
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap; /*stacks on smaller screens*/
+    margin-bottom: 50px;
 }
 .about-card {
     background-color:#f9f9f9;
@@ -208,6 +210,7 @@
     background-color:mistyrose;
     margin: 6px 0;
     padding: 8px;
+    margin-bottom: 30px;
     border-radius: 6px;
     font-size: 18px;
 }
