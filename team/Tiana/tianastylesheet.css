@@ -122,7 +122,7 @@
     max-width: 370px;
     padding: 40px;
     padding-bottom: 40px;
-    border: 2px solid #04AA6D;
+    border: 2px solid darkseagreen;
     border-radius: 10px;
     background-color: #f9f9f9;
 }
@@ -209,10 +209,96 @@
     margin: 0;
 }
 .about-card ul li {
-    background-color:mistyrose;
+    background-color: mistyrose;
     margin: 6px 0;
     padding: 8px;
     margin-bottom: 30px;
     border-radius: 6px;
     font-size: 18px;
+}
+
+header {
+    position: relative;
+    background-color: rgb(143, 176, 238);
+    border:solid 6px mistyrose;
+    
+   
+    
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    
+    color: white;
+    padding: 0px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+.header-picture {
+    height: 100px;
+    margin-left: 20px;
+   
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.header-content h1 {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    margin: 0;
+    font-size: 45px;
+    color: white;
+}
+.home-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    background-color: darkseagreen;
+    color: white;
+    border: 2px solid #ccc;
+    
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.home-button img {
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s;
+   
+}
+
+.home-button span {
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.home-button:hover {
+    transform: scale(1.1);
+    
+}
+
+
+body {
+
+    background-color:rgb(239, 243, 239);
+    border: solid 6px mistyrose;
+    margin: 0;
+    padding: 0;
+    
 }
