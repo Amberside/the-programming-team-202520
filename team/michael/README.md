@@ -41,6 +41,10 @@ Warp drive disengaged
 
 Currently in orbit around nebula
 
+Cryo pods activatwed
+
+
+
 
 
 
