@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #d3d9d6;
+  background-color: #d9f5e7;
 }
 /*This part is currently setting the heading colours */
 .container {
@@ -23,10 +23,14 @@ p {
 /*Heading types and styles - main H1 heading color added*/
 h1 {
   text-align: center;
-  color: black
+  color: orange
 }
 /*Heading types and styles - main H1 heading color added*/
 h2 {
+  text-align: left;
+  color: green;
+}
+h3 {
   text-align: left;
   color: green;
 }
@@ -41,13 +45,14 @@ a {
   display: block;
   margin: 1rem;
   padding: 1rem;
-  background-color: blueviolet;
-  color: white;
+  /*background-color: blueviolet;*/
+  color: blue
+  ;
   text-decoration: none;
 }
 /* Hover effects..text background of onject/container for text links*/
 a:hover {
-  background-color: blue;
+  /*background-color: blue;*/
 }
 /*Spinner styling*/
 .spinner {
@@ -72,10 +77,10 @@ a:hover {
   100% { transform: rotate(360deg);}
 
 }
-  */
-.imagestrip {
+
+/*.imagestrip {
   background-color: rgb(21, 156, 14);
-}
+}  */
 
 .col {
   width: 50%;
@@ -84,5 +89,5 @@ a:hover {
 .bottom {
   margin: 1rem auto;
   text-align: center;
-  background-color: rgb(21, 156, 14);
+  /*background-color: rgb(21, 156, 14);*/
 }
