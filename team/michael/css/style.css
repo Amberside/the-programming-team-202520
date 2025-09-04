@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #d9f5e7;
+  background-color: #d7ece2;
 }
 /*This part is currently setting the heading colours */
 .container {
@@ -64,13 +64,13 @@ a:hover {
   border-radius: 50%;
   animation: spin 2s linear infinite;
 }
-/* Continue here to develop an imagestrip styling suited to small images above footer elements*/
+/* Continue here to develop an imagestrip styling suited to small images above footer elements
 .imagestrip {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: blue;
   background-color: rgb(241, 238, 244);
   height: 50px;
-}
+}*/
 
 /* @keyframes spin {
   0% { transform: rotate(0deg);}
