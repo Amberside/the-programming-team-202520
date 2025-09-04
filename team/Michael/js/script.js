@@ -26,5 +26,3 @@ function KillClock() {
       clockID  = 0;
    }
 }
-
-// end hide -->
