@@ -23,7 +23,7 @@ p {
 /*Heading types and styles - main H1 heading color added*/
 h1 {
   text-align: center;
-  color: rgb(236, 176, 8)
+  color: rgb(255, 187, 2)
 }
 /*Heading types and styles - main H1 heading color added*/
 h2 {
@@ -54,7 +54,7 @@ a {
 a:hover {
   /*background-color: blue;*/
 }
-/*Spinner styling*/
+/*Spinner styling
 .spinner {
   margin: 3rem auto;
   width: 150px;
@@ -63,7 +63,7 @@ a:hover {
   border-top: 32px solid red;
   border-radius: 50%;
   animation: spin 2s linear infinite;
-}
+}*/
 /* Continue here to develop an imagestrip styling suited to small images above footer elements
 .imagestrip {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -90,4 +90,10 @@ a:hover {
   margin: 1rem auto;
   text-align: center;
   /*background-color: rgb(21, 156, 14);*/
+}
+  /*tbc for custom footer style;*/
+.footer {
+  margin: 1rem auto;
+  text-align: center;
+
 }
