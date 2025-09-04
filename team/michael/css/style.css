@@ -23,16 +23,16 @@ p {
 /*Heading types and styles - main H1 heading color added*/
 h1 {
   text-align: center;
-  color: orange
+  color: rgb(236, 176, 8)
 }
 /*Heading types and styles - main H1 heading color added*/
 h2 {
   text-align: left;
-  color: green;
+  color: rgb(112, 136, 112);
 }
 h3 {
   text-align: left;
-  color: brown;
+  color: rgb(112, 136, 112);
 }
 /*list styling*/
 li {
