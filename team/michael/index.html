@@ -11,7 +11,7 @@
              <!-- Clock values added to body tag-->
 <body onload="StartClock()" onunload="KillClock()">
 
-<main class="container">
+<main class="container" name="top">
 
   <h1>Michael (Mick) Kenny</h1>
 
@@ -92,15 +92,17 @@
     <a href="https://hellfirebluffpress.org" target="_blank"><img src="./img/theani3.gif" height="60px" width="66px" alt="Dolphin orbiting rotating planet animation linked to hellfirebluffpress.org"></a>
     Gunaikurnai Country, Gippsland
   <img src="./img/wombatani.gif" height="27px" width="582px" alt="Southern Hairy-nosed wombat">
-<p>Random Trivia</p>  
+<h4>Random Trivia</h4>  
 <form name="list" method="POST">
 <p>Melbourne Cup Winners: 1861 - 2024</p>
-<p>Enter a year between 1861-2024 <input name="number" type="text" size=4,1 value="" placeholder="Year" required=""></p>
+<p>Enter a year between 1861-2024 - <input name="number" type="text" size=4,1 value="" placeholder="Year" required=""> - 
+<input type="button" value="Press me" OnClick="document.list.pres.value=cupwinners[document.list.number.value-1861]"></p>
 The winner was: <input name="pres" type="text" size=30,1 value="">
-<input type="button" value="Press me" OnClick="document.list.pres.value=cupwinners[document.list.number.value-1861]">
+
 
 </form>
 <script src="./js/trivia.js"></script>
+<a href="#top">Back to top</a>
   </div>  
   </section>      
 
