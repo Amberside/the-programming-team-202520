@@ -34,6 +34,10 @@ h3 {
   text-align: left;
   color: rgb(112, 136, 112);
 }
+h4 {
+  text-align: center;
+  color: rgb(112, 136, 112);
+}
 /*list styling*/
 li {
   /*list items and bullet typeface colour*/
