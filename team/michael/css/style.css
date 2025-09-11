@@ -23,7 +23,7 @@ p {
 /*Heading types and styles - main H1 heading color added*/
 h1 {
   text-align: center;
-  color: rgb(255, 187, 2)
+  color: rgb(8, 119, 4)
 }
 /*Heading types and styles - main H1 heading color added*/
 h2 {
@@ -34,11 +34,14 @@ h3 {
   text-align: left;
   color: rgb(112, 136, 112);
 }
+h4 {
+  text-align: center;
+  color: rgb(112, 136, 112);
+}
 /*list styling*/
 li {
   /*list items and bullet typeface colour*/
   color: black;
-  
 }
 /*Active link colours and styles?*/
 a {
