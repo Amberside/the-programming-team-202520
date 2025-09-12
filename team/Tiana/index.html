@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="tianastylesheet.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiana</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/round-icons-z4PxoYcOxOg-unsplash.jpg" alt="cartoon elf face" class="header-picture">
+        
+            <h1>Tiana Wilson</h1>
+
+            <a href="../../index.html" class="home-button">
+                <img src="images/spaceshippublic-domain-vectorsunsplash.jpg" alt="spaceship cartoon">
+                <span>Go Home</span>
+            </a>
+    
+
+        </div>
+    </header>
+
+    <div class="pizza-builder">
+        <div class="topping-menu">
+        <h1>Customise Pizza Toppings</h1> <!--Page title-->
+
+    
+        <!--Button Container-->
+        <div class="button-list">
+                <!--Select none button triggers js function to deselect all items-->
+                <button onclick="selectNoneClick()" class="btn" type="button">Select None</button>
+                <!--Select all button triggers js function to select all items-->
+                <button onclick="selectAllClick()" class="btn"button type="button">Select All</button>        
+
+        </div>
+            <!--Container for all selectable toppings-->
+        <div class="multi-select-list">
+            <!--each of these is a clickable topping-->
+                <!--they get the 'selected' class when clicked-->
+                <!--(this) - when the element(the one being clicked) is clicked, call the listItemClick() function, and pass this element into it-->
+
+            <div onclick="listItemClick(this)" class="list-item" data-topping="pepperoni">Pepperoni</div>
+                
+            <div onclick="listItemClick(this)" class="list-item" data-topping="pineapple">Pineapple</div>
+            <div onclick="listItemClick(this)" class="list-item" data-topping="mushrooms">Mushroom</div>
+            <div onclick="listItemClick(this)" class="list-item" data-topping="jalapenos">Jalapenos</div>
+            <div onclick="listItemClick(this)" class="list-item" data-topping="olives">Olives</div>            
+                
+        </div>    
+    </div>
+
+    <script src="myscript.js"></script>
+
+    <!--pizza and flame-->
+    <div class="pizza-display">
+
+    <h2>Let's cook the Pizza!</h2>
+
+    <!--Pizza and Toppings-->
+    <div class="pizza-container">
+        <img src="images/pizza.png" class="pizza" alt="pizza base">
+
+        <!--Toppings (toggle visibility via JS)-->
+        <img src="images/peperonionly.png" class="topping" id="topping-pepperoni">
+
+        <!--update images later-->
+
+        <img src="images/pineappleonly3.png" class="topping" id="topping-pineapple">
+
+        <img src="images/mushrooms.png" class="topping" id="topping-mushrooms">
+
+        <img src="images/greenpepper.png" class="topping" id="topping-jalapenos">
+          <!--<a attribute href='https://pngtree.com/freepng/sliced-fresh-green-bell-pepper-front-view_5581933.html'>png image from pngtree.com/</a>-->
+
+        <!--add more toppings here-->
+        <img src="images/black and green olives.png" class="topping" id="topping-olives">
+        <!--<a href='https://pngtree.com/freepng/black-and-green-olives_15049558.html'>png image from pngtree.com/</a>-->
+
+
+    </div>
+        
+
+    <!--flame under pizza-->
+    <div class="flame-container">
+        <img src="images/flamerocks.png" class="flame" alt="flame">
+    </div>
+
+    </div>
+    </div>
+
+
+    <!--about Tiana Section-->
+    <div class="about-section">
+        <h2>About Me</h2>
+        <div class="about-cards">
+            
+               <div class="about-card">
+                <h3>Skills (learning)</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                    <li>Russian</li>
+                </ul>
+            </div>
+            
+            <!--Photo Card-->
+            <div class="about-card">
+                <p>Hi! My name is Tiana and I am enjoying learning new skills.</p>
+                <img src="images/catcyrus-chew-M-unsplash.jpg" alt="cat" class="profile-pic">
+                
+                <p>I recently started making electronic music for fun, check it out below. </p>
+            </div>
+            <!--skills card-->
+         
+
+             <div class="about-card">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Sewing</li>
+                    <li>Guitar</li>
+                    <li>Saxophone</li>
+                    <li>Games</li>
+                    <li>Reading</li>
+                </ul>
+            </div>
+
+
+
+        </div>
+        </div>
+
+    <!--Trying out embed soundcloud-->
+    <iframe width="100%" height="80px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2109259044&color=%236495ed&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/tiana-wilson-430120298" title="Tiana Wilson" target="_blank" style="color: #cccccc; text-decoration: none;">Tiana Wilson</a> · <a href="https://soundcloud.com/tiana-wilson-430120298/remote-access-trojan-wav" title="Remote Access Trojan" target="_blank" style="color: #cccccc; text-decoration: none;">Remote Access Trojan</a></div>
+
+    
+
+    <iframe width="100%" height="80px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1941711671&color=%236495ed&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/tiana-wilson-430120298" title="Tiana Wilson" target="_blank" style="color: #cccccc; text-decoration: none;">Tiana Wilson</a> · <a href="https://soundcloud.com/tiana-wilson-430120298/electric-tea-throw" title="Electric Tea Throw" target="_blank" style="color: #cccccc; text-decoration: none;">Electric Tea Throw</a></div>
+
+    </div>
+
+
+
+
+
+    <script src="myscript.js"></script>
+
+
+
+
+
+    </div> 
+
+
+
+
+
+
+
+    
+</body>
+</html>

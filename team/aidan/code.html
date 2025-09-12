@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Aidan - Coding page</title>
+</head>
+<body>
+  <div id="coding">
+    <h1>Some programs I've made...</h1>
+    <div class="age-in-seconds">
+    <h2>How old are you in seconds?</h1>
+    <section>
+    <label for="birthdatetime">Select your birth date and time:</label>
+    <input type="datetime-local" id="birthdatetime" name="birthday">
+    <button id="enter" onclick="startLiveUpdate()">Confirm</button>
+    </section>
+    <br>
+
+    <div id="output"></div>
+
+  <script>
+    let intervalID = null;
+    let birthDateTime = null;
+  //   window.onload = function() {
+  //   let birthDateTime = document.getElementById("birthdatetime").valueAsDate = new Date()
+  // }
+    
+    function startLiveUpdate(){
+      console.log('Function startLiveUpdate has been called');
+
+      // let currentTime = new Date();
+
+      let birthDateInput = document.getElementById("birthdatetime").value;
+        console.log('birthDateTime has been set to: ' + birthDateInput);
+
+      birthDateTime = new Date(birthDateInput);
+
+      if (intervalID !== null){
+        clearInterval(intervalID);
+      }
+      
+      intervalID = setInterval(updateAgeInSeconds, 1000);
+      updateAgeInSeconds();
+    }
+
+    function updateAgeInSeconds() {
+      console.log('Function updateAgeInSeconds has been called')
+
+      let now = new Date();
+      let diffInMS = (now.getTime() - birthDateTime.getTime());
+      let diffInSeconds = Math.floor(diffInMS / 1000); 
+
+      document.getElementById("output").textContent = 'You are ' + diffInSeconds.toLocaleString() + ' seconds old';
+    }
+    </script>
+    </div>
+    <hr>
+    <div class="aussie-xi-picker">
+      <h2>Build your $50 Ultimate Aussie Test XI</h1>
+  <table>
+    <tr>
+      <th>$6</th>
+        <td>
+          <input type="checkbox" id="warne" name="warne" value="warne">
+          <label for="warne">Shane Warne</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="smith" name="smith" value="smith">
+          <label for="smith">Steve Smith</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="clarke" name="clarke" value="clarke">
+          <label for="clarke">Michael Clarke</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="gilchrist" name="gilchrist" value="gilchrist">
+          <label for="gilchrist">Adam Gilchrist</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="ponting" name="ponting" value="ponting">
+          <label for="ponting">Ricky Ponting</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="mcgrath" name="mcgrath" value="mcgrath">
+          <label for="mcgrath">Glenn McGrath</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="cummins" name="cummins" value="cummins">
+          <label for="cummins">Pat Cummins</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="starc" name="starc" value="starc">
+          <label for="warne">Mitchell Starc</label><br>
+        </td>
+    </tr>
+    <tr>
+      <th>$5</th>
+        <td>
+          <input type="checkbox" id="hayden" name="hayden" value="hayden">
+          <label for="hayden">Matthew Hayden</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="warner" name="warner" value="warner">
+          <label for="warner">David Warner</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="swaugh" name="swaugh" value="swaugh">
+          <label for="swaugh">Steve Waugh</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="head" name="head" value="head">
+          <label for="head">Travis Head</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="hussey" name="hussey" value="hussey">
+          <label for="hussey">Michael Hussey</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="johnson" name="johnson" value="johnson">
+          <label for="johnson">Mitchell Johnson</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="watson" name="watson" value="watson">
+          <label for="watson">Shane Watson</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="lyon" name="lyon" value="lyon">
+          <label for="lyon">Nathan Lyon</label><br>
+        </td>
+    </tr>
+    <tr>
+      <th>$4</th>
+        <td>
+          <input type="checkbox" id="lee" name="lee" value="lee">
+          <label for="lee">Brett Lee</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="khawaja" name="khawaja" value="khawaja">
+          <label for="khawaja">Usman Khawaja</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="hazlewood" name="hazlewood" value="hazlewood">
+          <label for="hazlewood">Josh Hazlewood</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="gillespie" name="gillespie" value="gillespie">
+          <label for="gillespie">Jason Gillespie</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="langer" name="langer" value="langer">
+          <label for="langer">Justin Langer</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="mwaugh" name="mwaugh" value="mwaugh">
+          <label for="mwaugh">Mark Waugh</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="martyn" name="martyn" value="martyn">
+          <label for="martyn">Damien Martyn</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="haddin" name="haddin" value="haddin">
+          <label for="haddin">Brad Haddin</label><br>
+        </td>
+    </tr>
+    <tr>
+      <th>$3</th>
+        <td>
+          <input type="checkbox" id="symonds" name="symonds" value="symonds">
+          <label for="symonds">Andrew Symonds</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="harris" name="harris" value="harris">
+          <label for="harris">Ryan Harris</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="lehmann" name="lehmann" value="lehmann">
+          <label for="lehmann">Darren Lehmann</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="clark" name="clark" value="clark">
+          <label for="clark">Stuart Clark</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="marnus" name="marnus" value="marnus">
+          <label for="marnus">Marnus Labuschagne</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="katich" name="katich" value="katich">
+          <label for="katich">Simon Katich</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="siddle" name="siddle" value="siddle">
+          <label for="siddle">Peter Siddle</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="macgill" name="macgill" value="macgill">
+          <label for="macgill">Stuart MacGill</label><br>
+        </td>
+    </tr>
+    <tr>
+      <th>$2</th>
+        <td>
+          <input type="checkbox" id="boland" name="boland" value="boland">
+          <label for="boland">Scott Boland</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="mmarsh" name="mmarsh" value="mmarsh">
+          <label for="mmarsh">Mitchell Marsh</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="hodge" name="hodge" value="hodge">
+          <label for="hodge">Brad Hodge</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="kasprowicz" name="kasprowicz" value="kasprowicz">
+          <label for="kasprowicz">Michael Kasprowicz</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="green" name="green" value="green">
+          <label for="green">Cameron Green</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="hughes" name="hughes" value="hughes">
+          <label for="hughes">Phillip Hughes</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="rogers" name="rogers" value="rogers">
+          <label for="rogers">Chris Rogers</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="carey" name="carey" value="carey">
+          <label for="carey">Alex Carey</label><br>
+        </td>
+    </tr>
+    <tr>
+      <th>$1</th>
+        <td>
+          <input type="checkbox" id="okeefe" name="okeefe" value="okeefe">
+          <label for="okeefe">Steve O'Keefe</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="miller" name="miller" value="miller">
+          <label for="miller">Colin Miller</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="pattinson" name="pattinson" value="pattinson">
+          <label for="pattinson">James Pattinson</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="bichel" name="bichel" value="bichel">
+          <label for="bichel">Andrew Bichel</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="hilfenhaus" name="hilfenhaus" value="hilfenhaus">
+          <label for="hilfenhaus">Ben Hilfenhaus</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="wade" name="wade" value="wade">
+          <label for="wade">Matthew Wade</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="voges" name="voges" value="voges">
+          <label for="voges">Adam Voges</label><br>
+        </td>
+        <td>
+          <input type="checkbox" id="smarsh" name="smarsh" value="smarsh">
+          <label for="smarsh">Shaun Marsh</label><br>
+        </td>
+    </tr>
+  </table>
+  <div id="playersselected"></div>
+  <div id="balance"></div>
+
+  <script>
+    function playersSelected() {
+      let checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      let count = checkedCheckboxes.length;
+      console.log("count has been set to " + count)
+      document.getElementById("playersselected").textContent = count + ' Players Selected';
+    }
+
+    
+    function balanceRemaining(){
+      const sixbuckers = ["warne", "smith", "clarke", "gilchrist", "ponting", "mcgrath", "cummins", "starc"];
+      let sixbuckerCount = sixbuckers.filter(id => document.getElementById(id).checked).length;
+      console.log('sixbuckerCount has been set to ' + sixbuckerCount)
+      
+      const fivebuckers = ["hayden", "warner", "swaugh", "head", "hussey", "johnson", "watson", "lyon"];
+      let fivebuckerCount = fivebuckers.filter(id => document.getElementById(id).checked).length;
+      console.log('fivebuckerCount has been set to ' + fivebuckerCount)
+
+      const fourbuckers = ["lee", "khawaja", "hazlewood", "gillespie", "langer", "mwaugh", "martyn", "haddin"];
+      let fourbuckerCount = fourbuckers.filter(id => document.getElementById(id).checked).length;
+      console.log('fourbuckerCount has been set to ' + fourbuckerCount)
+
+      const threebuckers = ["symonds", "harris", "lehmann", "clarke", "marnus", "katich", "siddle", "macgill"];
+      let threebuckerCount = threebuckers.filter(id => document.getElementById(id).checked).length;
+      console.log('threebuckerCount has been set to ' + threebuckerCount)
+
+      const twobuckers = ["boland", "mmarsh", "hodge", "kasprowicz", "green", "hughes", "rogers", "carey"];
+      let twobuckerCount = twobuckers.filter(id => document.getElementById(id).checked).length;
+      console.log('twobuckerCount has been set to ' + twobuckerCount)
+
+      const onebuckers = ["okeefe", "miller", "pattinson", "bichel", "hilfenhaus", "wade", "voges", "smarsh"];
+      let onebuckerCount = onebuckers.filter(id => document.getElementById(id).checked).length;
+      console.log('onebuckerCount has been set to ' + onebuckerCount)
+
+      let totalBalance = Number(50 - 6 * sixbuckerCount - 5 * fivebuckerCount - 4 * fourbuckerCount - 3 * threebuckerCount - 2 * twobuckerCount - onebuckerCount);
+      console.log('totalBalance has been set to ' + totalBalance)
+      
+      document.getElementById("balance").textContent = '$' + totalBalance + ' left';
+      
+    }
+    
+    window.onload = function() {
+      playersSelected();
+      balanceRemaining();
+
+      document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+      checkbox.addEventListener('change', () => {
+        playersSelected();
+        balanceRemaining();
+      });
+    });
+  };
+  </script>
+  </div>
+  </div>
+  <footer>
+    <div class="btn">
+      <a href="./index.html">Back to Aidan's page</a>
+    </div>
+    <div class="btn">
+      <a href="../../index.html">Back to Home</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+  font-family: "EB Garamond", seriff;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*:not(.aussie-xi-picker) {
+  background-color: rgb(253, 255, 234);
+}
+
+header {
+  overflow: auto;
+  padding: 20px;
+  font-size: 15pt;
+  font-weight: 400;
+  border-radius: 5px;
+  display: block;
+}
+
+header h1 {
+  padding-left: 50px;
+}
+
+#hero {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding-left: 50px;
+  align-items: center;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  padding-top: 10px;
+  padding-left: 50px;
+  line-height: 25px;
+}
+
+#hero p {
+  font-weight: 600;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+
+footer {
+  display: block-inline;
+  padding-left: 200px;
+}
+
+a:not(.btn) {
+  color: #3223B8;
+}
+
+footer .btn {
+  display: block;
+  background-color: rgb(220, 236, 241);
+  text-align: center;
+  padding: 8px 6px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 2e;
+  text-decoration: none;
+  cursor: pointer;
+  /* margin-left: 100px; */
+  max-width: 130px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin: 5px;
+}
+
+footer .btn a {
+  color: #2C6884;
+  background-color: rgb(220, 236, 241);
+}
+
+#coding {
+  padding: 10px 15px;
+}
+
+#coding h1 {
+  padding-bottom: 10px;
+}
+
+#coding h2 {
+  padding: 15px 0px;
+}
+
+div.aussie-xi-picker div {
+  padding-bottom: 10px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

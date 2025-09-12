@@ -70,6 +70,16 @@ let students = [
     firstName: "Michael",
   },
   {
+    path: "keegan",
+    lastName: "Hughes",
+    firstName: "Keegan",
+  },
+  {
+    path: "aidan",
+    lastName: "Maizels",
+    firstName: "Aidan",
+  },
+  {
     path: "michael",
     lastName: "Kenny",
     firstName: "Michael",
@@ -78,6 +88,15 @@ let students = [
     path: "Roongroj",
     lastName: "Chumpon",
     firstName: "Roongroj",
+  },
+    path: "Tiana",
+    lastName: "Wilson",
+    firstName: "Tiana",
+  },
+  {
+    path: "mohamad",
+    lastName: "Akl",
+    firstName: "Mohamad",
   },
 ];
 
