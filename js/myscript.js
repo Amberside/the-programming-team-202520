@@ -60,9 +60,9 @@ let students = [
     firstName: "Jed",
   },
   {
-    "path": "ethan",
-    "lastName": "Lew",
-    "firstName": "Ethan"
+    path: "ethan",
+    lastName: "Lew",
+    firstName: "Ethan",
   },
   {
     path: "michael-deak",
@@ -70,25 +70,30 @@ let students = [
     firstName: "Michael",
   },
   {
-		"path": "keegan",
-		"lastName": "Hughes",
-		"firstName": "Keegan"
-	},
-	{
-		"path": "aidan",
-		"lastName": "Maizels",
-		"firstName": "Aidan"
-	},
-  	{
-		"path": "michael",
-		"lastName": "Kenny",
-		"firstName": "Michael"
-	},
-   	{
-		"path": "Tiana",
-		"lastName": "Wilson",
-		"firstName": "Tiana"
-	},
+    path: "keegan",
+    lastName: "Hughes",
+    firstName: "Keegan",
+  },
+  {
+    path: "aidan",
+    lastName: "Maizels",
+    firstName: "Aidan",
+  },
+  {
+    path: "michael",
+    lastName: "Kenny",
+    firstName: "Michael",
+  },
+  {
+    path: "Tiana",
+    lastName: "Wilson",
+    firstName: "Tiana",
+  },
+  {
+    path: "mohamad",
+    lastName: "Akl",
+    firstName: "Mohamad",
+  },
 ];
 
 const maxColor = 15;
