@@ -60,19 +60,24 @@ let students = [
     firstName: "Jed",
   },
   {
-    "path": "ethan",
-    "lastName": "Lew",
-    "firstName": "Ethan"
+    path: "ethan",
+    lastName: "Lew",
+    firstName: "Ethan",
   },
   {
     path: "michael-deak",
     lastName: "Deak",
     firstName: "Michael",
   },
-	{
-    "path": "michael",
-    "lastName": "Kenny",
-    "firstName": "Michael"
+  {
+    path: "michael",
+    lastName: "Kenny",
+    firstName: "Michael",
+  },
+  {
+    path: "Roongroj",
+    lastName: "Chumpon",
+    firstName: "Roongroj",
   },
 ];
 
