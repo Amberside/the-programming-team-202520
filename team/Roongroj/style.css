@@ -1,81 +1,176 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital@0;1&display=swap");
 /*CSS Reset*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 28px;
 }
 body {
-  background-color: #d5dbdb;
+  background-color: #f0ead6;
+  margin: 60px 30px;
 }
-.container {
-  max-width: 800px;
+h1 {
+  font-size: 32px;
+  color: #003b54;
+  text-align: center;
+  padding: 40px 0;
+}
+.about .intro {
+  font-size: 20px;
+  color: grey;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.about h1 {
+  margin-bottom: 20px;
+}
+.feature .card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+  max-width: 300px;
   margin: auto;
-  padding-top: 3em;
+  text-align: center;
+  background-color: #d5d5d5;
+  overflow: auto;
+  border-radius: 10px;
 }
-.flex {
+.feature .card .title {
+  color: red;
+  font-size: 18px;
+}
+.feature .card .fa {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.feature .card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.feature .card h2 {
+  color: #003b54;
+  padding: 10px 0;
+}
+.feature .card p {
+  color: #003b54;
+  padding: 10px 0;
+}
+.feature .card button:hover,
+a:hover {
+  opacity: 0.7;
+}
+.feature .card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #000000;
+}
+
+.about-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border-radius: 10px;
 }
-
-h1 {
-  text-align: center;
-  padding: 20px 0;
-  color: #003b54
+.feature {
+  max-width: 50%;
 }
-p {
-  color: #000;
-  margin-bottom: 20px;
-  text-align: center;
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+.skills h2 {
+  margin-bottom: 2rem;
+  color: #003b54;
+}
+.skills ul {
+  line-height: 1.8rem;
   font-size: 16px;
+  padding-left: 50px;
+  margin-bottom: 5rem;
+  color: grey;
 }
-h2 {
-  padding: 20px 0;
-  font-size: bold;
-  color:#003b54
+.col-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin-top: 5rem;
+  padding: 0px 50px;
 }
-.flex ul {
-  padding: 0 20px;
+.col-flex .about-me {
+  max-width: 50%;
+  padding: 20px 20px;
+  background-color: #d5d5d5;
+  border-radius: 10px;
 }
-li {
-  color: #000000;
+.col-flex h2 {
+  color: #003b54;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-a {
-  display: block;
-  margin: 1rem;
-  padding: 1rem;
-  background: #003b54;
-  color: #d5dbdb;
-  text-decoration: none;
+.col-flex p {
+  color: #003b54;
+  padding: 10px 30px;
+  text-align: center;
 }
-a:hover {
-  background-color: #005a8d;
-  color: #ff6f61;
+.col-flex .text-wrapper {
+  margin-bottom: 20px;
 }
-.spinner {
-  margin: 3rem auto;
-  width: 150px;
-  height: 150px;
-  border: 32px solid pink;
-  border-top: 32px solid red;
-  border-radius: 50%;
-  animation: spin 2s linear infinite;
+.loader-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
 }
-@keyframes spin {
+.loader {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  background-image: linear-gradient(#fff 16px, transparent 0),
+    linear-gradient(#ff3d00 16px, transparent 0),
+    linear-gradient(#ff3d00 16px, transparent 0),
+    linear-gradient(#fff 16px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left top, left bottom, right top, right bottom;
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
   0% {
+    width: 64px;
+    height: 64px;
     transform: rotate(0deg);
   }
+  50% {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
   100% {
+    width: 64px;
+    height: 64px;
     transform: rotate(360deg);
   }
 }
-.col {
-  width: 50%;
-}
+
 .bottom {
-  margin: 1rem auto;
+  margin: 3rem 6.5rem;
   text-align: center;
+  background-color: #003b54;
+  padding: 10px;
+}
+.bottom a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
 }
