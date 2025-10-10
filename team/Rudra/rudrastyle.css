@@ -1,41 +1,183 @@
-
-
-
 body {
-  background-color: #0b33aa;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  background-color: #ebf2fa;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
 
 .container {
   max-width: 800px;
   margin: auto;
   padding-top: 3em;
-  color: #e4e4e4;
+  color: #064789;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-p{
+p {
   text-align: center;
   margin-bottom: 50px;
+  color: #427aa1;
+  /* background-color: blueviolet; */
 }
 
-.col{
+li {
+  color: #427aa1;
+}
+
+.col {
   width: 50%;
   padding-bottom: 50px;
 }
 
+.abm {
+  /* background-color: chartreuse; */
+  text-align: center;
+}
 
-
-.abm p{
+.abm p {
   /* background-color: red; */
-  text-align: left;
-  width: 50%;
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 4rem;
 }
 
 .flex {
   display: flex;
 }
+
+.col {
+  width: 50%;
+  /* background-color: aqua; */
+}
+
+.sine-line {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.sine-line svg {
+  width: 200%;
+  height: 100px;
+  animation: moveWave 4s linear infinite;
+}
+
+@keyframes moveWave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.loader {
+  position: relative;
+  width: 108px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #427aa1;
+  border-radius: 10px;
+
+  
+}
+
+.loader-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;         
+  justify-content: center;    
+  z-index: 9999;      
+  /* background-color: #0d161b;  */
+}
+
+
+.loader::after,
+.loader::before {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  background-image: radial-gradient(circle 14px, #0d161b 100%, transparent 0);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  animation: eyeMove 10s infinite, blink 10s infinite;
+  transform-origin: center top;
+}
+@keyframes eyeMove {
+  0%,
+  10% {
+    background-position: 0px 0px;
+  }
+  13%,
+  40% {
+    background-position: -15px 0px;
+  }
+  43%,
+  70% {
+    background-position: 15px 0px;
+  }
+  73%,
+  90% {
+    background-position: 0px 15px;
+  }
+  93%,
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@keyframes blink {
+  0%,
+  10%,
+  12%,
+  20%,
+  22%,
+  40%,
+  42%,
+  60%,
+  62%,
+  70%,
+  72%,
+  90%,
+  92%,
+  98%,
+  100% {
+    height: 48px;
+  }
+  11%,
+  21%,
+  41%,
+  61%,
+  71%,
+  91%,
+  99% {
+    height: 18px;
+  }
+}
+
+.bottom {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+a {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #064789;
+  color: white;
+  text-decoration: none;
+
+  &:hover{
+    background-color: #427aa1;
+  }
+}
+
