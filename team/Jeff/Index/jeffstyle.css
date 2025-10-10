@@ -1,37 +1,84 @@
 body{
-  background-color:antiquewhite;
-  font-family: 'Times New Roman', Times, serif;
+  background-color: #FEC547;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
+
+
+
+
+
+
 h1 {
+  padding-top: 10px;
   text-align: center;
+  color:#A51A1F;
+
+}
+
+h2{
+  color: #A51A1F;
+
 }
 
 p {
   text-align: center;
   padding-bottom: 100px;
+  font-size: xx-large;
+
+}
+
+a{
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #F6A60E;
+  color: #A51A1F;
+  text-decoration: none;
+  font-family: "Gravitas One", serif;
+
+}
+
+a:hover {
+  background-color: #E3192F;
+}
+
+li{
+  font-size: x-large;
+  text-align: left;
 }
 
 .flex{
   display: flex;
-  /* padding: 200px; */
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
+  padding-left: 10
+}
+
+.container{
+  max-width: 800px;
+  margin: auto;
   
 }
 
+.gif {
+  width: 230px;
+  height: 200px;
+  background-image: url('/team/Jeff/jeffImages/giphy.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding:5rem;
+}
+
+
+
+
 .bottom{
-  padding-top: 200px;
+  padding-top: 5rem;
   text-align: center;
+  font-weight: bold;
 
 }
-
-.bottom a{
-  /* background-color: blue ; */
-  color: rgb(0, 0, 0);
-  display: block;
-  margin: 1rem;
-  padding: 1rem;
-
-}
-
