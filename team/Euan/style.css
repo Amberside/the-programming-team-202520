@@ -1,23 +1,81 @@
-* {
-  margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-colour: #f4eeff;
+  --accent-colour: #dcd6f7;
+  --content-colour: #303554;
 }
 
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--content-colour);
+}
+
+body {
+  background-color: var(--primary-colour);
+  padding: 0 15dvw;
+  /* padding: 0 15rem; */
+}
+
+
+/* Header */
 header {
   text-align: center;
-  margin: 2rem;
+  margin-top: 5dvh;
 }
 
 h1 {
-  
+  font-size: 2.33em;
+  padding-bottom: 0.5dvh;
 }
 
-.main-text {
-  text-align: center;
-  margin: 5rem;
+hr {
+  margin: auto;
+  color:  var(--content-colour);
+  border-style: solid;
+
 }
+
+header hr {
+  width: 400px;
+  margin-bottom: 1dvh;
+
+}
+
+
+
+
+/* Main */
+main {
+  /* background-color: var(--accent-colour); */
+   padding: 10dvh 0; 
+} 
+
 
 .column-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+div {
+  background-color: var(--accent-colour);
+  padding: 4dvh;
+  width: 21dvw;
+}
+
+h2 {
+  text-align: center;
+}
+
+main hr {
+  margin: 1dvh 0;
+  border-bottom: none;
+}
+
+.main-text {
+  text-align: center;
+  padding-bottom: 10dvh;
+  font-size: 1.25em;
 }
