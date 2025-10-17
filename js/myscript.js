@@ -110,6 +110,12 @@ let students = [
     lastName: "Pathak",
     firstName: "Rudra",
   },
+
+  {
+    path: "Euan",
+    lastName: "Renfrey-Douglas",
+    firstName: "Euan",
+  },
 ];
 
 const maxColor = 15;
