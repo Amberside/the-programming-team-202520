@@ -50,7 +50,7 @@ header hr {
 /* Main */
 main {
   /* background-color: var(--accent-colour); */
-   padding: 10dvh 0; 
+   padding: 10dvh 0 0 0; 
 } 
 
 
@@ -90,13 +90,14 @@ main hr {
 
 li {
   font-weight: 500;
+  padding-bottom: 0.8dvh;
 }
 
 /* Button */
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 12dvh;
+  margin-top: 10dvh;
 }
 
 a {
