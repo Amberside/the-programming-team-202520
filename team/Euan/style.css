@@ -44,13 +44,17 @@ header hr {
 
 }
 
+header p {
+  font-size: 1.2em;
+}
+
 
 
 
 /* Main */
 main {
   /* background-color: var(--accent-colour); */
-   padding: 10dvh 0 0 0; 
+   /* padding: 10dvh 0 0 0;  */
 } 
 
 
@@ -80,8 +84,9 @@ main hr {
 
 .main-text {
   text-align: center;
-  padding-bottom: 10dvh;
+  padding: 7dvh 0;
   font-size: 1.25em;
+  font-weight: 500;
 }
 
 .main-text p {
@@ -91,6 +96,7 @@ main hr {
 li {
   font-weight: 500;
   padding-bottom: 0.8dvh;
+  font-size: 1.2em;
 }
 
 /* Button */
