@@ -1,0 +1,113 @@
+/* === General Styles === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  margin: 16px;
+  padding: 16px;
+  background-color: #4cafef;
+  color: white;
+  text-decoration: none;
+  width: 260px;
+}
+
+a:hover {
+  background: #ffeb3b;
+  color: #333;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  padding: 32px;
+  background: #4cafef;
+  color: white;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header .subtitle {
+  font-size: 20px;
+  margin-top: 16px;
+  font-style: italic;
+  animation: fadeIn 3s infinite alternate;
+  color: #ffeb3b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* === Container & Columns === */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 32px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.column1,
+.column2 {
+  flex: 1;
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 16px;
+  color: #4cafef;
+}
+
+.column1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column1 ul li {
+  background: #e3f2fd;
+  margin: 8px 0;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.column2 p {
+  margin: 16px 0;
+}
+
+.column2 ul {
+  padding-left: 40px;
+}
+
+.bottom {
+  margin: 16px auto;
+  text-align: center;
+}

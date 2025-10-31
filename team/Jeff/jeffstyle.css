@@ -1,0 +1,134 @@
+body{
+  background-color: #FEC547;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.title{
+  padding:2rem;
+}
+
+
+.loader {
+  width: 96px;
+  box-sizing: content-box;
+  height: 48px;
+  background: #FFF;
+  border-color: #de3500;
+  border-style: solid;
+  border-width: 2px 2px 50px 2px;
+  border-radius: 100%;
+  position: relative;
+  animation: 3s yinYang linear infinite;
+  
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #FFF;
+  border: 18px solid #de3500;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  box-sizing: content-box;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #de3500;
+  border: 18px solid #FFF;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  box-sizing: content-box;
+}
+@keyframes yinYang {
+  100%{transform: rotate(360deg)}
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically */
+  padding-bottom: 2rem;
+  padding-top: none;
+}
+
+h1 {
+  padding-top: 0rem;
+  text-align: center;
+  color:#A51A1F;
+  padding-bottom: 0;
+
+}
+
+h2{
+  color: #A51A1F;
+
+}
+
+p {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: xx-large;
+  padding-top: 0rem;
+
+}
+
+a{
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #F6A60E;
+  color: #A51A1F;
+  text-decoration: none;
+  font-family: "Gravitas One", serif;
+
+}
+
+a:hover {
+  background-color: #E3192F;
+}
+
+li{
+  font-size: x-large;
+  text-align: left;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 10
+}
+
+.container{
+  max-width: 800px;
+  margin: auto;
+  
+}
+
+.gif {
+  width: 200px;
+  height: 200px;
+  background-image: url('/team/Jeff/jeffImages/giphy.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding:5rem;
+}
+
+
+
+
+.bottom{
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-colour: #f4eeff;
+  --accent-colour: #dcd6f7;
+  --content-colour: #303554;
+}
+
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--content-colour);
+}
+
+body {
+  background-color: var(--primary-colour);
+  padding: 0 15dvw;
+  /* padding: 0 15rem; */
+}
+
+
+/* Header */
+header {
+  text-align: center;
+  margin-top: 5dvh;
+}
+
+h1 {
+  font-size: 2.6em;
+  padding-bottom: 0.5dvh;
+  font-weight: 800;
+}
+
+hr {
+  margin: auto;
+  color:  var(--content-colour);
+  border-style: solid;
+
+}
+
+header hr {
+  width: 400px;
+  margin-bottom: 1dvh;
+
+}
+
+
+
+
+/* Main */
+main {
+  /* background-color: var(--accent-colour); */
+   padding: 10dvh 0; 
+} 
+
+
+.column-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2dvw;
+}
+
+section div {
+  background-color: var(--accent-colour);
+  padding: 4dvh;
+  width: 24dvw;
+  border-radius: 6px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+main hr {
+  margin: 1dvh 0;
+  border-bottom: none;
+}
+
+.main-text {
+  text-align: center;
+  padding-bottom: 10dvh;
+  font-size: 1.25em;
+}
+
+.main-text p {
+  padding-bottom: 1dvh;
+}
+
+li {
+  font-weight: 500;
+}
+
+/* Button */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12dvh;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+
+  border: var(--content-colour) solid 2px;
+  border-radius: 20px;
+
+  padding: 0.7dvw;
+  background-color: var(--accent-colour);
+
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--content-colour);
+    color: var(--primary-colour);
+  }
+}
