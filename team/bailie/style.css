@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary: #F3F2ED;
+  --secondary: #205B3E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--primary);
+}
+
+body {
+  background-color: #123524;
+  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+}
+
+.contentDiv {
+  width: 50dvw;
+}
+
+/* Bio */
+h1 {
+  color: var(--primary);
+  text-align: center;
+  padding-top: 1em;
+}
+
+#bio {
+  width: 80%;
+  margin: auto;
+  margin-top: 1.5em;
+  background-color: var(--secondary);
+  border: 5px solid var(--primary);
+  border-radius: 5px;
+}
+
+p {
+  margin: 1em;
+}
+
+hr {
+  width: 60%;
+  margin: auto;
+}
+
+#bioList {
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+#homeButton {
+  width: 80%;
+  margin: auto;
+  margin-top: 1em;
+  text-align: center;
+}
+
+#homeButton button {
+  width: 10em;
+  margin: auto;
+  background-color: #153C29;
+  border: 5px solid var(--primary);
+  &:hover {
+    background-color: #205B3E;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Matching game */
+#matchingGame {
+  color: var(--primary);
+  text-align: center;
+  padding-top: 2em;
+  width: 50dvw;
+  margin: auto;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+button {
+  color: var(--primary);
+  border: none;
+  font-size: 20px;
+  background-color: #102e1f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    background-color: #153c29;
+  }
+}
+
+#langList {
+  justify-content: space-evenly;
+}
+
+#langList button {
+  padding: 30px;
+}
+
+#ansList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+#ansList li {
+  list-style: none;
+}
+
+#ansList button {
+  background-color: #205b3e;
+}
+
+#queryValueBox  {
+  text-align: center;
+  height: 60px;
+  font-size: 35px;
+}
+
+#answerBox {
+  text-align: center;
+  height: 60px;
+  font-size: 20px;
+}
