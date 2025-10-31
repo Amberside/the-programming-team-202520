@@ -40,27 +40,86 @@ let imageList = [
   "al.png",
   "am.png",
   "an.png",
-  "ao.png"
+  "ao.png",
 ];
 
 // Array of student objects
 // path: The directory created in the team folder
 // lastName: Students last name
 // firstName: Students first name
-let students =
-[
 
-	{
-		"path": "amberle",
-		"lastName": "Seidl",
-		"firstName": "Amberle"
-	},
+let students = [
+  {
+    path: "amberle",
+    lastName: "Seidl",
+    firstName: "Amberle",
+  },
+  {
+    path: "jed",
+    lastName: "McKenna",
+    firstName: "Jed",
+  },
+  {
+    path: "ethan",
+    lastName: "Lew",
+    firstName: "Ethan",
+  },
+  {
+    path: "michael-deak",
+    lastName: "Deak",
+    firstName: "Michael",
+  },
+  {
+    path: "keegan",
+    lastName: "Hughes",
+    firstName: "Keegan",
+  },
+  {
+    path: "aidan",
+    lastName: "Maizels",
+    firstName: "Aidan",
+  },
+  {
+    path: "michael",
+    lastName: "Kenny",
+    firstName: "Michael",
+  },
+  {
+    path: "Roongroj",
+    lastName: "Chumpon",
+    firstName: "Roongroj",
+  },
+  {
+    path: "Tiana",
+    lastName: "Wilson",
+    firstName: "Tiana",
+  },
+  {
+    path: "mohamad",
+    lastName: "Akl",
+    firstName: "Mohamad",
+  },
+  {
+    path: "Jeff",
+    lastName: "Teoh",
+    firstName: "Yinnjeff",
+  },
+
+  {
+    path: "Rudra",
+    lastName: "Pathak",
+    firstName: "Rudra",
+  },
+  {
+    path: "Euan",
+    lastName: "Renfrey-Douglas",
+    firstName: "Euan",
+  },
   {
 		"path": "Yan",
 		"lastName": "Zhuolin",
 		"firstName": "Yan"
 	},
-	
 ];
 
 const maxColor = 15;
@@ -71,11 +130,13 @@ students.forEach((student, index) => {
   // Get the student full name
   student.fullName = `${student.firstName} ${student.lastName}`;
   // Get the student initials
-  student.initial = student.fullName.split(' ').reduce((acc, subname) => acc + subname[0], '');
+  student.initial = student.fullName
+    .split(" ")
+    .reduce((acc, subname) => acc + subname[0], "");
   // Get the colour for the card
-  student.color = `color-${(index % maxColor + 1).toString()}`;
+  student.color = `color-${((index % maxColor) + 1).toString()}`;
   // Select the shape for the card
-  student.clip = `clip-${(index % maxClip + 1).toString()}`;
+  student.clip = `clip-${((index % maxClip) + 1).toString()}`;
   // Select the image from the image array
   student.image = `${imageList[index % maxImage]}`;
 });
