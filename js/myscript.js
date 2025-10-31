@@ -120,6 +120,7 @@ let students = [
 		lastName: "Walsh",
 		firstName: "Bailie"
 	},
+  {
 		"path": "Yan",
 		"lastName": "Zhuolin",
 		"firstName": "Yan"
