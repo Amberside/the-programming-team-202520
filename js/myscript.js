@@ -56,6 +56,68 @@ let students =
 		"firstName": "Amberle"
 	},
   {
+    path: "jed",
+    lastName: "McKenna",
+    firstName: "Jed",
+  },
+  {
+    path: "ethan",
+    lastName: "Lew",
+    firstName: "Ethan",
+  },
+  {
+    path: "michael-deak",
+    lastName: "Deak",
+    firstName: "Michael",
+  },
+  {
+    path: "keegan",
+    lastName: "Hughes",
+    firstName: "Keegan",
+  },
+  {
+    path: "aidan",
+    lastName: "Maizels",
+    firstName: "Aidan",
+  },
+  {
+    path: "michael",
+    lastName: "Kenny",
+    firstName: "Michael",
+  },
+  {
+    path: "Roongroj",
+    lastName: "Chumpon",
+    firstName: "Roongroj",
+  },
+  {
+    path: "Tiana",
+    lastName: "Wilson",
+    firstName: "Tiana",
+  },
+  {
+    path: "mohamad",
+    lastName: "Akl",
+    firstName: "Mohamad",
+  },
+  {
+    path: "Jeff",
+    lastName: "Teoh",
+    firstName: "Yinnjeff",
+  },
+
+  {
+    path: "Rudra",
+    lastName: "Pathak",
+    firstName: "Rudra",
+  },
+
+  {
+    path: "Euan",
+    lastName: "Renfrey-Douglas",
+    firstName: "Euan",
+  },
+  {
 		"path": "bailie",
 		"lastName": "Walsh",
 		"firstName": "Bailie"
