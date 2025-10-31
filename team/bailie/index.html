@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bailie Walsh</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./js/matchingGame.js"></script>
+</head>
+<body>
+  <div id="content">
+    <!-- Bio -->
+    <div class="contentDiv">
+      <h1>Bailie Walsh</h1>
+      <div id="bio">
+        <p>Hi, I'm Bailie, a programming student at Holmesglen.</p>
+        <p>I previously studied a Bachelor of Science (Microbiology and Genetics) at Monash, where I got a little taste of coding with R.</p>
+        <p>Making websites is way more fun than doing endless T-tests on <em>Drosophila melanogaster</em> data, so I'm very happy in this course.</p>
+        <p>To the right is a matching game I made to revise my Norwegian vocabulary. If it is janky, it's because I made it in August.</p>
+        <hr>
+        <p>Languages I've contended with:</p>
+        <ul id="bioList">
+          <li>R</li>
+          <li>MATLAB</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+        </ul>
+      </div>
+      <div id="homeButton">
+        <button type="button" class="" id="homeButton"><a href="../../index.html">Go Home</a></button>
+      </div>
+    </div>
+    <!-- Matching game -->
+    <div class="contentDiv" id="matchingGame">
+      <div>
+        <h2>Language Word-match</h2>
+        <p>What does the word below mean?</p>
+      </div>
+      <div id="game">
+        <div id="queryValueBox">
+          <p>Query key goes here</p>
+        </div>
+        <div id="answerBox">
+          <p></p>
+        </div>
+        <div id="buttons">
+          <ul id="ansList">
+            <li><button type="button" class="ansOpt" id="buttonOne">Button 1</button></li>
+            <li><button type="button" class="ansOpt" id="buttonTwo">Button 2</button></li>
+            <li><button type="button" class="ansOpt" id="buttonThree">Button 3</button></li>
+            <li><button type="button" class="ansOpt" id="buttonFour">Button 4</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
