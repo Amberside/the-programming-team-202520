@@ -118,9 +118,9 @@ let students =
     firstName: "Euan",
   },
   {
-		"path": "bailie",
-		"lastName": "Walsh",
-		"firstName": "Bailie"
+		path: "bailie",
+		lastName: "Walsh",
+		firstName: "Bailie"
 	},
 	
 ];
