@@ -96,6 +96,7 @@ button {
   background-color: #102e1f;
   padding: 10px 20px;
   border-radius: 5px;
+  border: 2px solid var(--primary);
   &:hover {
     cursor: pointer;
   }
